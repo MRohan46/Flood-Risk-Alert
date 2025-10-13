@@ -1,0 +1,60 @@
+# Project Story
+
+## Inspiration
+The inspiration for **Flood Alert** was the observation of the heartbreaking consequences of floods in our society, especially in rural and low-lying parts of Pakistan. numerous families lose assets and even lives because of delayed notifications and the absence of timely information. We aimed to develop a mechanism that would offer **early warnings based on real-time data**, ensuring people remain safe and alert.
+
+Our motivation was a combination of **concern for the environment, community work, and technology**—we wanted to create something that actually could make an impact.
+
+## What it does
+**Flood Alert** is a smart alert system which **forecasts likely flood hazards and warns users beforehand**. It aggregates data from a variety of sources, including:
+
+- **Rainwater and water level sensors**
+- **Weather APIs for live forecasting**
+- **Geographical and historical flood data**
+
+Based on this data, the system estimates the risk and sends **SMS, mobile alerts, or email alerts**. It also offers practical advice, such as evacuation paths and safe areas.
+
+Mathematically, the prediction of risk is a weighted sum of parameters:
+
+\[
+Flood Risk Score = w_1 \cdot Rainfall + w_2 \cdot River Level + w_3 \cdot Soil Saturation + w_4 \cdot Historical Flood Data
+] 
+
+where \( w_1, w_2, w_3, w_4 \) are weights that were found through experimentation and calibration.
+
+## How we built it
+We developed **Flood Alert** with a **MERN stack** for the web application: 
+
+- **MongoDB** for storing user data, historical records, and sensor logs
+- **Node.js** and **Express.js** for the backend API and alerting logic
+- **React.js** for the user interface and notifications dashboard
+
+To implement real-time alerts, we used **Twilio API for SMS** and **Firebase Cloud Messaging** for push notifications. Processing of data and flood risk computation were done using **Python scripts** that fetch data from APIs and IoT sensors and send the outputs to the backend.
+
+The design provides **scalability and quick response**, even under concurrent user connections.
+
+## Issues we encountered
+- **Reliability of data:** Weather and sensor readings sometimes were inconsistent or lagged, necessitating the use of smoothing algorithms and backup data sources.
+- **Merging multiple APIs:** Merging various data sources into one predictive model was problematic, particularly when units or formats weren't compatible.
+- **Time limitations:** As a hackathon project, we only had time to **develop, test, and polish** the system.
+- **Alert precision:** Calibrating the notification thresholds to prevent false alerts without compromising safety was difficult.
+
+## Things that we're proud of
+- Developed a **working prototype** that was able to send flood alerts in real-time.
+- Were able to **merge various data sources** and integrate a predictive model.
+- Designed a **useful, clean dashboard** that shows alerts, risk scores, and safe zones.
+- Built a solution that has **practical use potential**, particularly in areas that are prone to floods.
+
+## What we learned
+- How to **build APIs, sensors, and cloud messaging** into one app.
+- How to **process real-time streams of data** and process them efficiently.
+- The significance of **user-centered design** in safety software—how simplicity and clarity can be a matter of life and death.
+- Hands-on experience with **data modeling, predictive algorithms, and full-stack development**.
+
+## What's next for Flood Alert
+- Add the **prediction model** using machine learning to enhance accuracy.
+- Incorporate **local government alerts** and community reporting for enhanced coverage.
+- Develop a **mobile-first version** to access users with restricted internet coverage.
+- Include **AI-based recommendations**, like customized evacuation routes and real-time safety advice.
+
+Our long-term vision is to make **Flood Alert a reliable, widely used resource** that enables communities to remain secure in flood situations.
