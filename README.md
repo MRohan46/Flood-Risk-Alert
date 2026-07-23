@@ -3,7 +3,7 @@
 ## Inspiration
 The inspiration for **Flood Alert** was the observation of the heartbreaking consequences of floods in our society, especially in rural and low-lying parts of Pakistan. numerous families lose assets and even lives because of delayed notifications and the absence of timely information. We aimed to develop a mechanism that would offer **early warnings based on real-time data**, ensuring people remain safe and alert.
 
-Our motivation was a combination of **concern for the environment, community work, and technology**—we wanted to create something that actually could make an impact.
+Our motivation was a combination of **concern for the environment, community work, and technology**â€”we wanted to create something that actually could make an impact.
 
 ## What it does
 **Flood Alert** is a smart alert system which **forecasts likely flood hazards and warns users beforehand**. It aggregates data from a variety of sources, including:
@@ -48,7 +48,7 @@ The design provides **scalability and quick response**, even under concurrent us
 ## What we learned
 - How to **build APIs, sensors, and cloud messaging** into one app.
 - How to **process real-time streams of data** and process them efficiently.
-- The significance of **user-centered design** in safety software—how simplicity and clarity can be a matter of life and death.
+- The significance of **user-centered design** in safety softwareâ€”how simplicity and clarity can be a matter of life and death.
 - Hands-on experience with **data modeling, predictive algorithms, and full-stack development**.
 
 ## What's next for Flood Alert
